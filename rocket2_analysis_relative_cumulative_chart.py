@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the CSV file
-file_path = "rocket_staking_snapshot_2.csv"  # Replace with your file path
+file_path = "rocket_staking_snapshot_2_removed_zeros.csv"  # Replace with your file path
 data = pd.read_csv(file_path)
 
 # Ensure 'value' is sorted in ascending order for cumulative calculations
@@ -104,7 +104,8 @@ def plot_relative_percentile_stats_with_median_and_cumulative(
     ax.legend(fontsize=fontsize_label)
     plt.tight_layout()
     plt.savefig(
-        "rocket2_analysis_relative_cumulative_chart_with_upper_bounds.png", dpi=200
+        "rocket2_analysis_removed_zeros_relative_cumulative_chart_with_upper_bounds.png",
+        dpi=200,
     )
     # plt.show()
 
